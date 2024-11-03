@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles/page.module.css';
+import Navbar from '@/components';
 
 export default function Home() {
   return (
