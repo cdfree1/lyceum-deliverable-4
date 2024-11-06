@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import Navbar from '@/app/components/navigation/navbar';
 
 type DogData = {
   [key: string]: {
@@ -32,10 +33,14 @@ export default async function DogDetails({ params }: Props) {
 
   return (
     <div>
-      <Image src={dog.image} alt={dog.name} width={300} height={300} />
-      <h2>{dog.name}</h2>
-      <p>Breed: {dog.breed}</p>
-      <p>Age: {dog.age}</p>
+      <h1 className="text-green-500 font-extrabold text-center text-xl">Your New Friend!</h1>
+      <Navbar />
+      <div className="flex flex-col items-center pt-4">
+        <Image src={dog.image} alt={dog.name} width={300} height={300} className="rounded-lg shadow-lg" />
+        <h2 className="mt-4 text-2xl font-bold">{dog.name}</h2>
+        <p className="mt-2 text-lg">Breed: {dog.breed}</p>
+        <p className="mt-1 text-lg">Age: {dog.age}</p>
+      </div>
     </div>
   );
 }
