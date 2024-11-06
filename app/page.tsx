@@ -16,7 +16,7 @@ export default function Home() {
             <Image src="/dog1.jpeg" alt="Dog 1" width={300} height={300} />
           </Link>
             <h2>Gorlak, Destroyer of Worlds</h2>
-            <Link href="/dogs/labrador" passHref className="hover:underline text-green-500">Breed: Labrador</Link>
+            <Link href="/breeds/labrador" passHref className="hover:underline text-green-500">Breed: Labrador</Link>
             <p>Age: 2 months</p>
           </div>
           <div className={styles.flier}>
@@ -24,7 +24,7 @@ export default function Home() {
             <Image src="/dog2.jpg" alt="Dog 2" width={300} height={300} />
           </Link>
             <h2>Instagram Reels</h2>
-            <Link href="/dogs/pomeranian" passHref className="hover:underline text-green-500">Breed: Pomeranian</Link>
+            <Link href="/breeds/pomeranian" passHref className="hover:underline text-green-500">Breed: Pomeranian</Link>
             <p>Age: 3 months</p>
           </div>
           <div className={styles.flier}>
@@ -32,7 +32,7 @@ export default function Home() {
             <Image src="/dog3.jpg" alt="Dog 3" width={300} height={300} />
           </Link>
             <h2>Greg</h2>
-          <Link href="/dogs/poodle" passHref className="hover:underline text-green-500">Breed: Poodle</Link>
+          <Link href="/breeds/poodle" passHref className="hover:underline text-green-500">Breed: Poodle</Link>
             <p>Age: 1 year</p>
           </div>
       </div>
